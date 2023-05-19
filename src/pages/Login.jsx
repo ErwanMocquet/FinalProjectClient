@@ -17,7 +17,7 @@ export default function Login() {
       email: email,
       password: password,
     };
-    axios.post("https://full-stack-follow-through.herokuapp.com/auth/login", data).then((response) => {
+    axios.post("https://final-project-eaaa.herokuapp.com/auth/login", data).then((response) => {
       if (response.data.error) {
         alert(response.data.error);
       } else {
