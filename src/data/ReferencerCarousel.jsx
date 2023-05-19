@@ -31,7 +31,7 @@ export default function ReferencerCarousel({setSliderRef}) {
     slidesToScroll: 1,
     fade: true,
     arrows: false,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 4000,
     pauseOnHover: true,
     adaptiveHeight: true,
