@@ -1,0 +1,88 @@
+footer a{
+    color: var(--white);
+}
+
+footer a:visited{
+    color: var(--white);
+}
+
+footer a:hover{
+    color: var(--lightblue);
+}
+
+.upper-section-footer{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    background-color: var(--darkblue);
+    padding: 2rem 6rem;
+}
+
+.logo-footer{
+    width: 60%;
+    margin-bottom: 2rem;
+}
+
+.phone-footer-cont{
+    margin-top: 1.5rem;
+}
+
+.first-div-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.second-div-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: top;
+    padding: 2rem 3rem 0;
+}
+
+.third-div-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: left;
+    padding: 2rem 0 0 2rem;
+}
+
+.fourth-div-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: left;
+    padding: 2rem 0 0 2rem; 
+}
+
+.button-top-footer{
+    margin-bottom: 1rem;
+}
+
+.btn-footer{
+    width: 100%;
+    color: var(--darkblue)!important;
+    box-shadow: none!important;
+}
+
+.btn-footer-link{
+    color: var(--darkblue)!important;
+}
+
+.title-footer{
+    margin-bottom: 3rem;
+}
+
+.politik-link-footer:hover{
+   color: var(--darkblue);
+   transition: all 0.3s ease-in-out;
+}
+
+.lower-section-footer{
+    background-color: var(--lightblue);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}

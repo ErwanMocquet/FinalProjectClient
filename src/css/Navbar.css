@@ -1,0 +1,113 @@
+.nav-cont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .logo-cont{
+    width: 15%;
+  }
+  
+  .logo {
+    width: 100%;
+  }
+  
+  .nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin: 0 1rem;
+    padding: 0 0 1rem 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.3rem;
+    color: #0F0F0F;
+    cursor: pointer;
+  }
+  
+  .nav-item:hover .dropdown {
+    display: block;
+  }
+
+  .special-nav-item:hover{
+    color: #A8A8A8;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 15vw;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 3px 5px 10px #A8A8A8;
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .dropdown li {
+    margin: 0;
+  }
+  
+  .dropdown a {
+    display: block;
+    padding: 1rem 0;
+    text-decoration: none;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn {
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    background-color: #c2d6ff;
+    color: #042063;
+    text-decoration: none;
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.2rem;
+    box-shadow: 3px 5px 10px #A8A8A8;
+    margin: 0 0 1rem 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #89ABFA;
+  }
+  
+  .nav-item a:hover {
+    color: #062D89!important;
+    cursor: pointer;
+  }
+
+  .login-hover:hover{
+    color: #062D89;
+    cursor: pointer;
+  }
+
+  .nav-item a{
+    color: #0F0F0F;
+  }
+
+  .nav-item a:visited {
+    color: #0F0F0F;
+  }
+  

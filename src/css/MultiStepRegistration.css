@@ -1,0 +1,133 @@
+.registration-grid-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.step-indicator {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5vh 0 8vh;
+}
+
+.step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Exo 2", sans-serif;
+  height: 2.5rem;
+  background-color: var(--white);
+  color: var(--lightblue);
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+.number-step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  position: relative;
+  font-size: 1.3rem;
+
+}
+
+.step.active .number-step {
+  background-color: var(--darkblue);
+}
+
+.step.completed .number-step {
+  background-color: var(--darkblue);
+}
+
+.step p {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--white);
+  white-space: nowrap;
+}
+
+.step.active {
+  background-color: var(--darkblue);
+  color: var(--lightblue);
+}
+
+.registration-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem 6rem;
+  background-color: var(--white);
+  border-radius: 2px;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+}
+
+.label-registration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-registration {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--darkblue);
+  border-radius: 2px;
+  font-size: 18px;
+}
+
+.button-registration {
+  background-color: var(--lightblue);
+  color: var(--darkblue);
+  font-family: "Exo 2", sans-serif;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-right: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-registration:hover {
+    background-color: var(--buttonhover);
+    cursor: pointer;
+  }
+
+.error {
+  color: red;
+  margin: 2rem 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sumup-text-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-family: "Exo 2", sans-serif;
+  text-align: right;
+}
+
+.sumup-text-cont h1 {
+  margin-right: 10px;
+}
+
+.sumup-container {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0;
+}

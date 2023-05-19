@@ -1,0 +1,67 @@
+.carousel-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-cont{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 65%;
+    height: auto;
+    margin: 2rem 0;
+    padding: 2rem 6rem;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #A7A7A7;
+}
+
+.slick-arrow{
+    margin: 0 -5rem;
+}
+
+.logo-cont-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-logo{
+    width: 30%;
+    margin: 2rem;
+}
+
+.big-logos-review{
+    width: 25%;
+}
+
+.review-content{
+    line-height: 1.8rem;
+}
+
+.review-person-name{
+    color: var(--darkblue);
+    margin: 1rem 0;
+}
+
+.review-person-title{
+    margin-bottom: 2rem;
+}
+
+.custom-prev-arrow{
+	background-color: var(--lightblue);
+	border: none;
+    color: #7a7a7a;
+    margin-right: 5rem;
+    cursor: pointer;
+}
+
+.custom-next-arrow{
+	background-color: var(--lightblue);
+	border: none;
+    color: #7a7a7a;
+    margin-left: 5rem;
+    cursor: pointer;
+}
