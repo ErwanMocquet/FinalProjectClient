@@ -36,7 +36,7 @@ export default function MultiStepRegistration() {
     return regex.test(password);
   };
 
-  const handleNext = async () => {
+  const handleNext = () => {
     if (step === 1 && (!virksomhedsNavn || !/^\d{8}$/.test(CVRNummer))) {
       setErrorMessage("Please enter a valid CVR Number");
       return;
