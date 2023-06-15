@@ -1,14 +1,14 @@
-import { useState } from "react";
+import { React, useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Footer from "../components/Footer";
-import Logo from "../img/logo.png";
 import axios from "axios";
-import Cookies from "js-cookie";
+import { AuthContext } from "../helpers/AuthContext";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const { setAuthState } = useContext(AuthContext);
 
   let navigate = useNavigate()
 
@@ -17,14 +17,25 @@ export default function Login() {
       email: email,
       password: password,
     };
-    axios.post("https://final-project-eaaa.herokuapp.com/auth/login", data).then((response) => {
+    axios.post("http://localhost:3001/auth/login", data).then((response) => {
       if (response.data.error) {
         alert(response.data.error);
       } else {
-        Cookies.set("access-token", response.data, { expires: 1 });
+        localStorage.setItem("accessToken", response.data.token);
+        setAuthState({
+          email: response.data.email,
+          id: response.data.id,
+          status: true,
+        })
         navigate("/hovedside")
       }
     });
+  };
+
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      Login();
+    }
   };
 
   return (
@@ -34,17 +45,6 @@ export default function Login() {
           <title>Log på | Provide Business - Database</title>
         </Helmet>
       </HelmetProvider>
-      <nav className="nav-login">
-        <div className="logo-cont">
-          <Link to="/">
-            <img
-              src={Logo}
-              alt="Provide Business - Database Logo"
-              className="logo-login"
-            />
-          </Link>
-        </div>
-      </nav>
       <section className="section-login">
         <div className="login-container">
           <h1 className="darkblue-font exo-font subtitle title-margin">
@@ -57,6 +57,8 @@ export default function Login() {
             onChange={(event) => {
               setEmail(event.target.value);
             }}
+            autoComplete="email"
+            name="email"
           />
           <input
             type="password"
@@ -65,6 +67,7 @@ export default function Login() {
             onChange={(event) => {
               setPassword(event.target.value);
             }}
+            onKeyDown={handleKeyPress}
           />
           <div className="buttons-login-cont">
             <Link

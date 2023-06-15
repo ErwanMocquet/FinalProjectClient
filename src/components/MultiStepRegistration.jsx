@@ -96,7 +96,7 @@ export default function MultiStepRegistration() {
       tel: sumupTel,
       password: password,
     };
-    axios.post("https://final-project-eaaa.herokuapp.com/auth", data).then(() => {
+    axios.post("http://localhost:3001/auth", data).then(() => {
       navigate("/login")
     });
   };

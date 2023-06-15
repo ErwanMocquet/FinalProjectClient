@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import StreamlinedProcess from "../components/StreamlinedProcess";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ComputerScreen from "../img/computer-screen-turned.png";
 import Flowpbdb from "../img/image-flow-pbdb.png";
@@ -11,7 +10,6 @@ import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 export default function PBDatabase() {
   return (
     <main>
-      <Navbar />
       <HelmetProvider>
         <Helmet>
           <title>Service | Provide Business - Database</title>

@@ -1,5 +1,4 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import SanderGruppen from "../img/logos/sandergruppen.png";
 import ADK from "../img/logos/adkteknik.png";
@@ -20,7 +19,6 @@ export default function Referencer() {
           <title>Referencer | Provide Business - Database</title>
         </Helmet>
       </HelmetProvider>
-      <Navbar />
       <section className="centering top-section-referencer">
         <h1 className="darkblue-font exo-font title title-margin">
           SKAB RESULTATER MED OS

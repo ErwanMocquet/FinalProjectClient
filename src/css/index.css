@@ -729,3 +729,82 @@ a:visited {
   background-color: var(--lightblue);
   padding: 4rem 4rem;
 }
+
+/* PROFILE PAGE STYLING */
+
+.profile-cont{
+  margin: 2rem 4rem;
+}
+
+.user-info-cont{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid var(--gray);
+  margin-bottom: 4rem;
+}
+
+.info-cont-profile{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+}
+
+.display-info-cont{
+  border: 1px solid var(--darkblue);
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.margin-profile-info{
+  margin-bottom: 0.5rem;
+}
+
+.password-profile-cont{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+}
+
+.input-profile{
+  border: 1px solid var(--darkblue);
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.user-info-cont-last{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid var(--gray);
+}
+
+.closing-button-cont{
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+}
+
+.closing-button{
+  background-color: var(--white);
+  color: red;
+  border:1px solid red;
+  border-radius: 20px;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.16);
+}
+
+.closing-button:hover{
+  background-color: red;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* SEARCH PAGE STYLING */
+
+.main-searchpage{
+  margin: 2% 5%;
+}

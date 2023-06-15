@@ -87,6 +87,7 @@
     box-shadow: 3px 5px 10px #A8A8A8;
     margin: 0 0 1rem 0;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
   }
   
   .btn:hover {
@@ -109,5 +110,13 @@
 
   .nav-item a:visited {
     color: #0F0F0F;
+  }
+
+  .btn-logout{
+    margin: 0 0 1rem 2rem;
+    background-color: var(--white);
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
   }
   

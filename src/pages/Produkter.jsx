@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ServiceList from "../img/service-list-pbdb.png";
 import Startup from "../img/start-up.png";
@@ -14,7 +13,6 @@ export default function Produkter() {
           <title>Produkter | Provide Business - Database</title>
         </Helmet>
       </HelmetProvider>
-      <Navbar />
       <section className="centering top-section-produkter">
         <h1 className="darkblue-font exo-font title title-margin">PRODUKTER</h1>
         <p className="roboto-font general-content gray-font line-height-content">

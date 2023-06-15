@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
@@ -27,7 +26,6 @@ export default function Forside() {
 
   return (
     <main>
-      <Navbar />
       <HelmetProvider>
         <Helmet>
           <title>Forside | Provide Business - Database</title>

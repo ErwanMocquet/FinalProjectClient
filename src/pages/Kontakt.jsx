@@ -1,5 +1,4 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export default function Kontakt() {
@@ -10,7 +9,6 @@ export default function Kontakt() {
           <title>Kontakt | Provide Business - Database</title>
         </Helmet>
       </HelmetProvider>
-      <Navbar />
       <section className="grid-kontakt-cont">
         <div className="left-side-grid-kontakt">
           <h1 className="exo-font darkblue-font title title-margin">

@@ -1,11 +1,9 @@
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../css/Politiks.css";
 
 export default function Privatlivspolitik() {
   return (
     <main>
-      <Navbar />
       <section className="privatlivspolitik-main-layout">
         <p className="title exo-font darkblue-font">
           Privatlivspolitik - Provide Business{" "}

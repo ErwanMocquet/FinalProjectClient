@@ -4,7 +4,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
-export default function Navbar() {
+export default function NavbarGeneral() {
     return (
       <nav className="nav-cont">
         <div className="logo-cont">
