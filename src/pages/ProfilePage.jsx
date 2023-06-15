@@ -21,7 +21,7 @@ function ProfilePage() {
 
     axios
       .put(
-        "http://localhost:3001/auth/changepassword",
+        "https://final-project-eaaa.herokuapp.com/auth/changepassword",
         {
           oldPassword: oldPassword,
           confirmPassword: confirmPassword,
@@ -48,7 +48,7 @@ function ProfilePage() {
 
     if (confirmation) {
       axios
-        .delete(`http://localhost:3001/auth/delete/${id}`, {
+        .delete(`https://final-project-eaaa.herokuapp.com/auth/delete/${id}`, {
           headers: {
             accessToken: localStorage.getItem("accessToken"),
           },
@@ -68,7 +68,7 @@ function ProfilePage() {
   };
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/auth/basicinfo/${id}`).then((response) => {
+    axios.get(`https://final-project-eaaa.herokuapp.com/auth/basicinfo/${id}`).then((response) => {
       setEmail(response.data?.email || "");
       setVirksomhed(response.data?.virksomhedsnavn || "");
     });

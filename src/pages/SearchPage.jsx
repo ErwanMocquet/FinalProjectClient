@@ -19,7 +19,7 @@ export default function SearchPage() {
         region: telefonQuery.trim(),
       };
 
-      const response = await axios.get("http://localhost:3001/api/companies", { params });
+      const response = await axios.get("https://final-project-eaaa.herokuapp.com/api/companies", { params });
       const searchResultData = response.data.hits.hits.map((hit) => ({
         cvrNummer: hit._source.Vrvirksomhed.cvrNummer,
         navn: hit._source.Vrvirksomhed.virksomhedMetadata.nyesteNavn.navn,

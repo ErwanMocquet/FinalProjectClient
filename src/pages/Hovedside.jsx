@@ -17,7 +17,7 @@ export default function Hovedside() {
     const fetchData = async () => {
       try {
         let response;
-        response = await axios.get("http://localhost:3001/api/companies");
+        response = await axios.get("https://final-project-eaaa.herokuapp.com/api/companies");
 
         const companyData = response.data.hits.hits.map((hit) => {
           const {
